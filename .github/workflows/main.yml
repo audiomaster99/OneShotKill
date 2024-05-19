@@ -80,4 +80,4 @@ jobs:
         artifacts: "${{ env.PROJECT_NAME }}.zip"
         name: "${{ env.PROJECT_NAME }} v${{ steps.inc_version.outputs.version }}"
         tag: "v${{ steps.inc_version.outputs.version }}"
-        body: |
+        body: "** ${{ env.PROJECT_NAME }} **"
